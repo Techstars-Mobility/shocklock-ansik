@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43469040-1597-4f75-a66d-51cfb660df50" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/main.min.css" afterPath="$PROJECT_DIR$/build/main.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pitStop[website].iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,8 +65,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.56435645" vertical-offset="0" max-vertical-offset="1860">
-                  <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+                <state vertical-scroll-proportion="0.8811881" vertical-offset="1430" max-vertical-offset="2010">
+                  <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -99,7 +99,7 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/stylesheets/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37578288" vertical-offset="0" max-vertical-offset="5595">
+                <state vertical-scroll-proportion="-0.4697286" vertical-offset="405" max-vertical-offset="5595">
                   <caret line="12" column="36" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="36" />
                   <folding />
                 </state>
@@ -730,18 +730,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/stylesheets/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56435645" vertical-offset="0" max-vertical-offset="1860">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state vertical-scroll-proportion="-0.4697286" vertical-offset="405" max-vertical-offset="5595">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/main.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37578288" vertical-offset="0" max-vertical-offset="5595">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.8811881" vertical-offset="1430" max-vertical-offset="2010">
+          <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
           <folding />
         </state>
       </provider>
