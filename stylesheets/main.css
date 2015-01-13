@@ -353,6 +353,9 @@ input[type="submit"] {
     font-weight: 400;
     padding: 20px;
     margin-top: 5px;
+    -webkit-box-shadow: 0px 2px 250px 10px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 2px 25px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 25px 10px rgba(0, 0, 0, 0.12);
     font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri; }
     .signUp button:hover {
       background: #C2185B; }
