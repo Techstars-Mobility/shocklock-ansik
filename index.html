@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <!-- Initialization -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ShockLock</title>
+    <meta name="description" content="ShockLock is an automotive safety tool">
+    <link rel="apple-touch-icon" href="resources/shockLock.png">
+    <link rel="icon" type="image/png" href="resources/shockLock.png">
+
+    <!-- CSS Files -->
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <link href="packages/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="packages/animate.css/animate.min.css" rel="stylesheet">
+    <link href="packages/sweetalert/lib/sweet-alert.css" rel="stylesheet">
+    <link href="packages/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Javascript Libraries -->
+    <script src="packages/angular/angular.min.js"></script>
+    <script src="packages/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="packages/ngAnimate/js/angular-animate.min.js"></script>
+    <script src="packages/sweetalert/lib/sweet-alert.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="packages/firebase/firebase.js"></script>
+    <script src="packages/angularfire/dist/angularfire.min.js"></script>
+
+    <!-- Show time -->
+    <script src="build/main.min.js"></script>
+
+    <!-- Font Family -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="ShockLockWebsite">
+    <header class="toolBar" id="shrinkHeader">
+        <section class="columns">
+            <h1 class="title column-2" ui-sref="home()">
+                ShockLock
+            </h1>
+            <a class="link column-2" href="http://www.shocklock.ca/blogs/innovation" target="_blank">
+                <i class="ion-compose"></i>
+                Blog
+            </a>
+            <a class="link column-2" ui-sref="about()">
+                <i class="ion-person-stalker"></i>
+                About
+            </a>
+            <a class="link column-2" ui-sref="contact()">
+                <i class="ion-email"></i>
+                Contact Us
+            </a>
+            <a class="link column-2" href="https://www.facebook.com/theshocklock" target="_blank">
+                <i class="ion-social-facebook"></i>
+                Facebook
+            </a>
+            <a class="link column-2" href="https://twitter.com/theshocklock" target="_blank">
+                <i class="ion-social-twitter"></i>
+                Twitter
+            </a>
+        </section>
+    </header>
+    <header class="homeHeader" class="homeHeader">
+        <section class="columns">
+            <section class="column-6">
+                <h1 class="title">Shock<strong>Lock</strong></h1>
+                <p class="description">
+                    Safety For The <strong>Professional</strong> Mechanic
+                </p>
+            </section>
+            <section class="column-6">
+            </section>
+        </section>
+        <video autoplay loop id="bgvid">
+            <source src="resources/shocklock.webmhd.webm" type="video/webm">
+            <source src="resources/shocklock.mp4" type="video/mp4">
+            <source src="resources/shocklock.oggtheora.ogv" type="video/ogv">
+        </video>
+    </header>
+    <section class="signUp">
+        <section class="columns">
+            <section class="column-9">
+                <h4 class="title">ORDER NOW</h4>
+                <p class="description">
+                    You can order ShockLock for only <strong>24.99$</strong>.
+                </p>
+            </section>
+            <button class="column-3" ng-click="signUp()">Buy Now!</button>
+        </section>
+    </section>
+    <section class="mainContent">
+        <section ui-view class="animated fadeIn"></section>
+    </section>
+    <section class="content hasContent">
+    </section>
+    <footer class="mainFooter">
+        <section class="inner">
+            <p class="description">
+                Made with <i class="ion-heart"></i> in Waterloo, Ontario.
+            </p>
+        </section>
+    </footer>
+    <!-- Jquery -->
+    <script src="packages/jquery/dist/jquery.min.js"></script>
+    <script src="build/ui.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-58465416-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+        </html>

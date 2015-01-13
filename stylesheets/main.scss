@@ -1,0 +1,368 @@
+/*
+ Includes
+ */
+
+@import "../packages/bourbon/app/assets/stylesheets/bourbon";
+@import "../packages/neat/app/assets/stylesheets/neat";
+@import "../packages/bitters/app/assets/stylesheets/base";
+
+/*
+ Variables
+ */
+
+$color-blue:                 #2196F3;
+$color-pink:                 #E91E63;
+$color-dark:                 #424242;
+$color-gray:                 #EEEEEE;
+
+/*
+ OverWrites
+*/
+
+$header-font-family:        "Roboto";
+$base-font-family:          "Roboto";
+
+/*
+ Main Code
+ */
+
+.toolBar {
+ @include position(fixed, -64px 0 null 0);
+ z-index: 10;
+ background: $color-blue;
+ height:64px;
+ -webkit-box-shadow: 0px 2px 250px 10px rgba(0, 0, 0, 0.12);
+ -moz-box-shadow:    0px 2px 25px 10px rgba(0, 0, 0, 0.12);
+ box-shadow:         0px 2px 25px 10px rgba(0, 0, 0, 0.12);
+ &.navUp {
+  transition: top 0.2s ease-in-out;
+  top: 0;
+ }
+ &.navDown {
+  transition: top 0.2s ease-in-out;
+  top: 0;
+
+ }
+ .title {
+  text-transform: uppercase;
+  color: white;
+  font-size: golden-ratio($base-font-size, 1);
+  padding: 16px 0;
+  &:hover {
+   color: rgba(255,255,255,0.435);
+  }
+ }
+ .link {
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.87);
+  font-size: $base-font-size;
+  text-align: center;
+  padding: 20px 0;
+  &:hover {
+   background: rgba(0,0,0,0.1);
+  }
+ }
+}
+.mainContent {
+ @include position(relative, null null null null);
+ padding: 0;
+ min-height: 100%;
+}
+.mainContainer {
+ &.ng-enter {
+  animation: fadeIn 1s;
+ }
+ &.ng-leave {
+  animation: fadeOut 1s;
+ }
+}
+.homeHeader{
+ width: 100%;
+ padding: 250px 10px;
+ min-height: 100%;
+ position: relative;
+ background: $color-blue;
+ .title {
+  text-transform: uppercase;
+  color: white;
+  font-size: golden-ratio($h1-font-size, 1);
+  strong {
+   font-weight: 300 !important;
+  }
+ }
+ .description {
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.435);
+  font-size: golden-ratio($base-font-size, 1);
+  strong {
+   color: rgba(255,255,255,0.87);
+   font-weight: 400;
+  }
+ }
+ video#bgvid {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  opacity: 0.435;
+ }
+}
+.signUp {
+ width: 100%;
+ padding: 20px 10px;
+ background: $color-blue;
+ position: relative;
+ .title {
+  color: rgba(255,255,255,0.87);
+ }
+ .description {
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.435);
+  strong {
+   color: rgba(255,255,255,0.87);
+   font-weight: 400;
+  }
+ }
+ input {
+  background: #42A5F5;
+  border:none;
+  padding: 10px;
+  margin-top: 12.5px;
+  @include border-top-radius(3px);
+  @include border-bottom-radius(3px);
+  color: white;
+  font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri;
+  font-weight: 400;
+ }
+ ::-webkit-input-placeholder {
+  color: white;
+  font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri;
+ }
+
+ :-moz-placeholder { /* Firefox 18- */
+  color: white;
+  font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri;
+ }
+
+ ::-moz-placeholder {  /* Firefox 19+ */
+  color: white;
+  font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri;
+ }
+
+ :-ms-input-placeholder {
+  color: white;
+  font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri;
+ }
+ button {
+  background: $color-pink;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 20px;
+  margin-top: 5px;
+  font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri;
+  &:hover {
+   background: #C2185B;
+  }
+ }
+}
+.content {
+ padding: 20px 10px;
+ &.hasContent {
+  background: white;
+ }
+ iframe {
+  -webkit-box-shadow: 0px 2px 50px 20px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow:    0px 2px 50px 20px rgba(0, 0, 0, 0.26);
+  box-shadow:         0px 2px 50px 20px rgba(0, 0, 0, 0.26);
+  width:90%;
+  display: table;
+  margin: 0 auto;
+  &.map {
+   -webkit-box-shadow: none;
+   -moz-box-shadow:    none;
+   box-shadow:         none;
+   width:100%;
+   margin-top: 20px;
+  }
+ }
+ .contentIcon {
+  text-align: center;
+  font-size: golden-ratio($h1-font-size, 2);
+  display: block;
+  width: 100%;
+ }
+ .heading {
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px 0;
+  display: table;
+  max-width: 50%;
+ }
+ .heading2 {
+  text-transform: none;
+  color: rgba(0,0,0,0.435);
+  text-align: center;
+  display: table;
+  margin: auto;
+  width: 62.5%;
+  line-height: 1.5em;
+  ul {
+   max-width: 100%;
+   text-align: left;
+   margin: 20px auto;
+  }
+ }
+ ul {
+  max-width: 100%;
+  margin: 20px auto;
+  li {
+   padding: 20px 0;
+   i {
+    color: $color-blue;
+    font-size: 2em;
+   }
+  }
+ }
+ .heading3 {
+  text-transform: none;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: left;
+  line-height: 2em;
+  margin-top: 20px;
+  display: table;
+  margin: auto;
+  width: 62.5%;
+  ul {
+   max-width: 100%;
+   text-align: left;
+   margin: 20px auto;
+  }
+ }
+ .title {
+  text-transform: none;
+  color: rgba(0,0,0,0.435);
+  margin-bottom: 10px;
+ }
+ .alignCenter {
+  text-align: center;
+ }
+ .description {
+  color: rgba(0,0,0,0.26);
+  line-height: 1.5em;
+  strong {
+   color: rgba(0,0,0,0.87);
+  }
+ }
+}
+.mainFooter{
+ width: 100%;
+ padding: 75px 10px;
+ background: $color-gray;
+ .title {
+  text-transform: uppercase;
+  font-size: golden-ratio($h1-font-size, 1);
+  strong {
+   font-weight: 300 !important;
+  }
+ }
+ .description {
+  i {
+   color: $color-pink;
+  }
+ }
+}
+
+/*
+ Framework Modifications
+ */
+
+body, html {
+ margin: 0;
+ padding: 0;
+ min-height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+ font-weight: 400 !important;
+ text-transform: uppercase;
+}
+
+* {
+ font-family: Roboto ,"Roboto" ,"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+}
+
+/*
+ Helper Code
+ */
+
+.columns {
+ @include outer-container();
+ .column-3 {
+  @include span-columns(3);
+  min-height: 100%;
+ }
+ .column-2 {
+  @include span-columns(2);
+  min-height: 100%;
+ }
+ .column-6 {
+  @include span-columns(6);
+  min-height: 100%;
+ }
+ .column-4 {
+  @include span-columns(4);
+  min-height: 100%;
+ }
+ .column-10 {
+  @include span-columns(10);
+  min-height: 100%;
+ }
+ .column-8 {
+  @include span-columns(8);
+  min-height: 100%;
+ }
+ .column-9 {
+  @include span-columns(9);
+  min-height: 100%;
+ }
+}
+.inner {
+ @include outer-container();
+}
+.fancyDivider {
+ width: 33%;
+ display: table;
+ margin: 50px auto;
+ background: $color-blue;
+ height:5px;
+ opacity: 0.5;
+}
+
+/*
+ Animations
+ */
+
+@-webkit-keyframes AnimationName {
+ 0%{background-position:0% 87%}
+ 50%{background-position:100% 14%}
+ 100%{background-position:0% 87%}
+}
+@-moz-keyframes AnimationName {
+ 0%{background-position:0% 87%}
+ 50%{background-position:100% 14%}
+ 100%{background-position:0% 87%}
+}
+@-o-keyframes AnimationName {
+ 0%{background-position:0% 87%}
+ 50%{background-position:100% 14%}
+ 100%{background-position:0% 87%}
+}
+@keyframes AnimationName {
+ 0%{background-position:0% 87%}
+ 50%{background-position:100% 14%}
+ 100%{background-position:0% 87%}
+}
