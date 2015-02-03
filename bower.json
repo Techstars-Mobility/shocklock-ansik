@@ -16,6 +16,9 @@
     "angular-ui-router": "~0.2.13",
     "neat": "~1.7.1",
     "sweetalert": "~0.3.3",
-    "ngAnimate": "*"
+    "ngAnimate": "*",
+    "lean-slider": "~1.0.1",
+    "bxslider": "*",
+    "angular-carousel": "~0.3.9"
   }
 }
