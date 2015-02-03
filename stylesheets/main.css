@@ -241,7 +241,7 @@ input[type="submit"] {
   right: 0;
   left: 0;
   z-index: 10;
-  background: #2196f3;
+  background: #212121;
   height: 64px;
   -webkit-box-shadow: 0px 2px 250px 10px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0px 2px 25px 10px rgba(0, 0, 0, 0.12);
@@ -251,7 +251,7 @@ input[type="submit"] {
     top: 0; }
   .toolBar.navDown {
     transition: top 0.2s ease-in-out;
-    top: 0; }
+    top: -64px; }
   .toolBar .title {
     text-transform: uppercase;
     color: white;
@@ -283,7 +283,7 @@ input[type="submit"] {
   padding: 250px 10px;
   min-height: 100%;
   position: relative;
-  background: #2196f3; }
+  background: #212121; }
   .homeHeader .title {
     text-transform: uppercase;
     color: white;
@@ -311,7 +311,7 @@ input[type="submit"] {
 .signUp {
   width: 100%;
   padding: 20px 10px;
-  background: #2196f3;
+  background: #212121;
   position: relative; }
   .signUp .title {
     color: rgba(255, 255, 255, 0.87); }
@@ -321,34 +321,8 @@ input[type="submit"] {
     .signUp .description strong {
       color: rgba(255, 255, 255, 0.87);
       font-weight: 400; }
-  .signUp input {
-    background: #42A5F5;
-    border: none;
-    padding: 10px;
-    margin-top: 12.5px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    color: white;
-    font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri;
-    font-weight: 400; }
-  .signUp ::-webkit-input-placeholder {
-    color: white;
-    font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri; }
-  .signUp :-moz-placeholder {
-    /* Firefox 18- */
-    color: white;
-    font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri; }
-  .signUp ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: white;
-    font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri; }
-  .signUp :-ms-input-placeholder {
-    color: white;
-    font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri; }
   .signUp button {
-    background: #e91e63;
+    background: #4caf50;
     text-transform: uppercase;
     font-weight: 400;
     padding: 20px;
@@ -358,7 +332,7 @@ input[type="submit"] {
     box-shadow: 0px 2px 25px 10px rgba(0, 0, 0, 0.12);
     font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri; }
     .signUp button:hover {
-      background: #C2185B; }
+      background: #4caf50; }
 
 .content {
   padding: 20px 10px; }
@@ -406,7 +380,7 @@ input[type="submit"] {
     .content ul li {
       padding: 20px 0; }
       .content ul li i {
-        color: #2196f3;
+        color: #212121;
         font-size: 2em; }
   .content .heading3 {
     text-transform: none;
@@ -436,14 +410,16 @@ input[type="submit"] {
 .mainFooter {
   width: 100%;
   padding: 75px 10px;
-  background: #eeeeee; }
+  background: #212121; }
   .mainFooter .title {
     text-transform: uppercase;
     font-size: 3.6405em; }
     .mainFooter .title strong {
       font-weight: 300 !important; }
-  .mainFooter .description i {
-    color: #e91e63; }
+  .mainFooter .description {
+    color: white !important; }
+    .mainFooter .description i {
+      color: #4caf50; }
 
 /* Framework Modifications */
 body, html {
@@ -537,7 +513,7 @@ h1, h2, h3, h4, h5 {
   width: 33%;
   display: table;
   margin: 50px auto;
-  background: #2196f3;
+  background: #212121;
   height: 5px;
   opacity: 0.5; }
 
