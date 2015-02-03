@@ -2,7 +2,7 @@
  Initialization
  */
 
-var app = angular.module('ShockLockWebsite', ['firebase', 'ui.router', 'ngAnimate', 'angular-carousel']);
+var app = angular.module('ShockLockWebsite', ['firebase', 'ui.router', 'ngAnimate']);
 
 var remoteDB = new Firebase('https://shocklock-website.firebaseio.com');
 
