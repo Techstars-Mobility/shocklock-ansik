@@ -322,9 +322,10 @@ input[type="submit"] {
       color: rgba(255, 255, 255, 0.87);
       font-weight: 400; }
   .signUp .button {
-    background: #4caf50;
+    background: #43a047;
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 1.25em !important;
     padding: 20px;
     margin-top: 5px;
     -webkit-box-shadow: 0px 2px 250px 10px rgba(0, 0, 0, 0.12);
@@ -332,7 +333,7 @@ input[type="submit"] {
     box-shadow: 0px 2px 25px 10px rgba(0, 0, 0, 0.12);
     font-family: Roboto , "Roboto" , "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-seri; }
     .signUp .button:hover {
-      background: #4caf50; }
+      background: #43a047; }
 
 .content {
   padding: 20px 10px; }
@@ -355,6 +356,13 @@ input[type="submit"] {
     -webkit-box-shadow: 0px 2px 50px 20px rgba(0, 0, 0, 0.26);
     -moz-box-shadow: 0px 2px 50px 20px rgba(0, 0, 0, 0.26);
     box-shadow: 0px 2px 50px 20px rgba(0, 0, 0, 0.26); }
+  .content.awards {
+    text-align: center; }
+    .content.awards img {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      margin: 20px auto; }
   .content .contentIcon {
     text-align: center;
     font-size: 5.89033em;
@@ -423,7 +431,7 @@ input[type="submit"] {
   .mainFooter .description {
     color: white !important; }
     .mainFooter .description i {
-      color: #4caf50; }
+      color: #43a047; }
 
 /* Framework Modifications */
 body, html {
