@@ -238,6 +238,9 @@ input[type="submit"] {
   font-family: "Roboto", Roboto, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important; }
 
 /* Main Code */
+body {
+  padding-top: 64px !important; }
+
 .toolBar {
   position: fixed;
   top: 0;
@@ -246,6 +249,9 @@ input[type="submit"] {
   z-index: 110;
   background: rgba(0, 0, 0, 0.87);
   height: 64px;
+  -webkit-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
   /* &.navUp {  top: -64px;  transition: top 0.2s ease-in-out; } &.navDown {  top: 0;  transition: top 0.2s ease-in-out; }*/ }
   .toolBar .title {
     background: transparent;
@@ -548,8 +554,7 @@ input[type="submit"] {
     .ambassadors .ambassador .title {
       color: white; }
     .ambassadors .ambassador:hover, .ambassadors .ambassador.active {
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid #00e676; }
+      background: rgba(255, 255, 255, 0.12); }
 
 /* Framework Modifications */
 body, html {

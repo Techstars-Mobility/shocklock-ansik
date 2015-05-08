@@ -120,7 +120,7 @@ app.controller('aboutCtrl', function ($scope, $rootScope) {
 
 });
 
-app.controller('testimonialsCtrl', function ($scope, $rootScope) {
+app.controller('testimonialsCtrl', function ($scope, $rootScope, $sce) {
 
     /*
      Initialization
@@ -140,11 +140,11 @@ app.controller('testimonialsCtrl', function ($scope, $rootScope) {
 
             picture: "http://i.imgur.com/Pfu6Q9d.jpg",
 
+            video: "nx1opBUPljc",
+
             images: [
 
-                "http://www.shocklock.ca/resources/4S2A4863.jpg",
-                "http://www.shocklock.ca/resources/4S2A4860.jpg",
-                "http://www.shocklock.ca/resources/4S2A4847.jpg",
+                "http://www.tchcustompainting.com/images/albums/NewAlbum_4ef9e/tn_1200_TCH_Custom_Painting_Expedition_5.jpg.jpg",
                 "http://www.shocklock.ca/resources/4S2A4846.jpg"
 
             ],
@@ -179,17 +179,20 @@ app.controller('testimonialsCtrl', function ($scope, $rootScope) {
 
             links: {
 
-                website: "",
+                website: "http://www.tchcustompainting.com/",
 
-                instagram: "",
+                instagram: "https://instagram.com/gilanchondo1/",
 
-                facebook: "",
+                facebook: "https://www.facebook.com/gilanchondopainting?fref=ts",
 
-                twitter: ""
+                twitter: "https://www.facebook.com/gilanchondopainting?fref=ts"
 
             }
 
-        }
+        },
+
+
+
 
     ];
 
@@ -200,6 +203,12 @@ app.controller('testimonialsCtrl', function ($scope, $rootScope) {
 
         $scope.activeID = index;
         $scope.active = $scope.ambassadors[index];
+
+    };
+
+    $scope.trustSrc = function(src) {
+
+        return $sce.trustAsResourceUrl(src);
 
     };
 

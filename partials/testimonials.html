@@ -3,11 +3,12 @@
         <section class="ambassador" ng-repeat="ambassador in ambassadors"
                  ng-click="setActive($index)"
                  ng-class="activeID === $index ? 'active': 'not_active'">
-            <img src="{{ambassador.picture}}" alt="ambassador.name">
+            <img src="{{ambassador.picture}}" alt="ambassador.name" style="width:100%;">
             <h5 class="title">{{ambassador.name}}</h5>
         </section>
     </section>
 </section>
+<section class="content hasContent"></section>
 <section class="content hasContent alignLeft">
     <section class="inner">
         <h3 class="heading">{{active.name}}</h3>
@@ -66,7 +67,11 @@
         </section>
     </section>
 </section>
-
+<!--<section class="content hasContent">
+    <section class="inner">
+        <iframe height="500" src="{{trustSrc('https://www.youtube-nocookie.com/embed/' + active.video + '?rel=0&amp;showinfo=0')}}" frameborder="0" allowfullscreen></iframe>
+    </section>
+</section>-->
 <section class="fancyDivider"></section>
 <section class="content beforeFooter">
     <section class="inner">
