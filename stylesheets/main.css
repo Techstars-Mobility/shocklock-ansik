@@ -527,8 +527,10 @@ body {
       font-weight: 300 !important; }
   .mainFooter .description {
     color: white !important; }
-    .mainFooter .description i {
+    .mainFooter .description i, .mainFooter .description a {
       color: #00e676; }
+      .mainFooter .description i:hover, .mainFooter .description a:hover {
+        color: #00c853; }
   .mainFooter .link {
     color: white;
     margin: 0 5px;
