@@ -36,36 +36,42 @@
 <body ng-app="ShockLockWebsite">
     <header class="toolBar" id="shrinkHeader">
         <section class="columns">
-            <h1 class="title column-2" ui-sref="home()">
-                ShockLock
-            </h1>
-            <a class="link column-2" href="https://medium.com/@shocklock" target="_blank">
-                <i class="ion-compose"></i>
-                Blog
-            </a>
-            <a class="link column-2" href="" ui-sref="about()">
-                <i class="ion-person-stalker"></i>
-                About
-            </a>
-            <a class="link column-2" href="" ui-sref="contact()">
-                <i class="ion-email"></i>
-                Contact Us
-            </a>
-            <a class="link column-2" href="https://www.dropbox.com/sh/g300m0ymm1o0nvk/AAB1LOJHlLo_q6o1wr8gQhlJa?n=377017434#/" target="_blank">
-                <i class="ion-document-text"></i>
-                Press Kit
-            </a>
+            <section class="column-2">
+                <button class="title" ng-click="update_tab(1)" ng-class="active_tab === 1 ? 'active': 'not_active'">
+                    Shock<span>Lock</span>
+                </button>
+            </section>
+            <section class="column-6">
+                <button class="link" ng-click="update_tab(3)" ng-class="active_tab === 3 ? 'active': 'not_active'">
+                    About
+                </button>
+                <button class="link" ng-click="update_tab(4)" ui-sref="testimonials()" ng-class="active_tab === 4 ? 'active': 'not_active'">
+                    Testimonials
+                </button>
+                <button class="link" ng-click="update_tab(5)" ng-class="active_tab === 5 ? 'active': 'not_active'">
+                    Contact Us
+                </button>
+            </section>
+            <section class="column-4" style="direction:rtl;">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="S54KLB85V2NC8">
+                    <button class="link buy" name="submit">Buy Now</button>
+                </form>
+            </section>
         </section>
     </header>
     <header class="homeHeader" class="homeHeader">
         <section class="columns">
             <section class="column-6">
+
                 <h1 class="title animated bounceInLeft">Shock<strong>Lock</strong></h1>
                 <p class="description animated bounceInRight">
                     Safety For The <strong>Professional</strong> Technician.
                 </p>
-            </section>
-            <section class="column-6">
+                <a class="vidbutton animated fadeInDownBig" href="https://www.youtube.com/watch?v=Qt1b8ibUeOY" target="_blank">
+                    Watch Video
+                </a>
             </section>
         </section>
         <!--<video autoplay loop id="bgvid">
@@ -74,12 +80,13 @@
             <source src="resources/shocklock.oggtheora.ogv" type="video/ogv">
         </video>-->
         <video autoplay loop id="bgvid">
-            <source src="resources/ShockLock.webm" type="video/webm">
-            <source src="resources/ShockLock-copy.mp4" type="video/mp4">
-            <source src="resources/ShockLock.ogv" type="video/ogv">
+            <source src="resources/ShockLock.webm#t=18,32" type="video/webm">
+            <source src="resources/ShockLock-copy.mp4#t=18,32" type="video/mp4">
+            <source src="resources/ShockLock.ogv#t=18,32" type="video/ogv">
         </video>
+
     </header>
-    <section class="signUp">
+    <!--<section class="signUp">
         <section class="columns">
             <section class="column-9">
                 <h4 class="title animated bounceInDown">ORDER NOW</h4>
@@ -95,17 +102,37 @@
                 <button class="button column-3 animated fadeInDown" name="submit">Buy Now</button>
             </form>
         </section>
-    </section>
+    </section>-->
+
     <section class="mainContent">
         <section ui-view class="animated fadeIn"></section>
     </section>
     <section class="content hasContent">
     </section>
     <footer class="mainFooter">
-        <section class="inner">
-            <p class="description">
-                Made with <i class="ion-heart"></i> in Waterloo, Ontario.
-            </p>
+        <section class="columns">
+            <section class="column-6">
+                <p class="description">
+                    Made with <i class="ion-heart"></i> in Waterloo, Ontario.
+                </p>
+            </section>
+            <section class="column-6" style="direction: rtl">
+                <a class="link" href="https://www.facebook.com/theshocklock" target="_blank"
+                   style="color: #5D9CEC">
+                    <i class="ion-social-facebook"></i>
+                </a>
+                <a class="link" href="https://twitter.com/TheShockLock" target="_blank"
+                   style="color: #3BAFDA">
+                    <i class="ion-social-twitter"></i>
+                </a>
+                <a class="link" href="https://www.youtube.com/channel/UCBWpAc3Vt2h-SbYljjMSHjQ" target="_blank"
+                   style="color: #ED5565">
+                    <i class="ion-social-youtube"></i>
+                </a>
+                <a class="link" href="https://twitter.com/TheShockLock" target="_blank" style="color: #fff">
+                    <i class="ion-social-instagram"></i>
+                </a>
+            </section>
         </section>
     </footer>
     <!-- Jquery -->
