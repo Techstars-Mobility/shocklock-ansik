@@ -40,6 +40,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
             controller: 'testimonialsCtrl'
         })
 
+        .state('product', {
+            url: '/product',
+            templateUrl: 'partials/product.html',
+            controller: 'productCtrl'
+        })
+
 });
 
 /*
@@ -117,6 +123,10 @@ app.controller('aboutCtrl', function ($scope, $rootScope) {
     /*
      Ui Tweaks
      */
+
+});
+
+app.controller('productCtrl', function ($scope, $rootScope){
 
 });
 
